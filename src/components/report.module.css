@@ -1,0 +1,120 @@
+.sliderContainer {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 60px;
+}
+
+.slide {
+  margin-right: 20px;
+}
+
+.slideContainer {
+  display: flex;
+}
+
+.nextArrow,
+.previousArrow {
+  position: absolute;
+  top: calc(100% + 20px);
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.nextArrow {
+  right: 20px;
+}
+
+.previousArrow {
+  left: 0px;
+}
+
+.carouselSVG {
+  height: 100%;
+  width: 100%;
+}
+
+.reportInfo {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.infoLeft {
+  width: 35%;
+}
+
+.issueText {
+  font-family: "Gronland", sans-serif;
+  font-size: calc(12px + 1vw);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.reportTitle {
+  font-size: calc(18px + 1.75vw);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.infoRight {
+  width: 65%;
+  font-family: "Gronland", sans-serif;
+}
+
+.desktopInfoLinks {
+  display: flex;
+  gap: 10px;
+}
+
+.mobileInfoLinks {
+  display: none;
+}
+
+.resourceLink {
+  border: 1px solid #fff;
+  font-family: "Gronland", sans-serif;
+  display: flex;
+  gap: 5px;
+  padding: 5px 10px;
+  align-items: center;
+  transition: all 400ms;
+}
+
+.resourceLink:hover {
+  background: #fff;
+  color: #000;
+  transition: all 400ms;
+}
+
+.resourceLink svg {
+  height: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .mobileInfoLinks {
+    display: flex;
+    gap: 10px;
+  }
+
+  .desktopInfoLinks {
+    display: none;
+  }
+
+  .reportInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .infoLeft,
+  .infoRight {
+    width: 100%;
+  }
+
+  .infoRight {
+    padding-bottom: 10px;
+  }
+}

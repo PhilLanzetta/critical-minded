@@ -1,7 +1,13 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/
- */
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import "./src/components/global.css"
 
-// You can delete this file if you're not using it
+export const shouldUpdateScroll = ({
+  routerProps: { location },
+  prevRouterProps,
+}) => {
+  window.history.scrollRestoration = "manual"
+  window.scrollTo(0, 0)
+
+  return false
+}

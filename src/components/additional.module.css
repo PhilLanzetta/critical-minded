@@ -1,0 +1,73 @@
+.resourceTable {
+  padding: 0 20px;
+  font-family: "Gronland", sans-serif;
+  margin-bottom: 120px;
+}
+
+.resourceRow {
+  display: grid;
+  padding: 10px 0;
+  border-bottom: 1px solid #fff;
+  grid-template-columns: 9fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.resourceInfo {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.resourcePubInfo {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.resourceLink {
+  border: 1px solid #fff;
+  display: inline-flex;
+  gap: 5px;
+  padding: 5px;
+  align-items: center;
+  justify-content: flex-end;
+  justify-self: end;
+  transition: all 400ms;
+}
+
+.resourceLink:hover {
+  background: #fff;
+  color: #000;
+  transition: all 400ms;
+}
+
+.resourceLink svg {
+  height: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .resourceRow {
+    align-items: start;
+  }
+
+  .resourceInfo {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .resourceTitle {
+   font-size: 16px;
+  }
+
+  .resourcePubInfo {
+    display: flex;
+  }
+
+  .pubOrg::after {
+    content: ",";
+  }
+}

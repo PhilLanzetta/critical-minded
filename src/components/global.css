@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Gronland";
+  src: url(../fonts/Gronland-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gronland";
+  src: url(../fonts/Gronland-Italic.woff2) format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "NaNTragedy";
+  src: url(../fonts/NaNTragedyDisplay-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanTragedy";
+  src: url(../fonts/NaNTragedyDisplay-Bold.woff2) format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+.slick-track {
+  display: flex;
+}
+
+.email-form {
+  width: 100%;
+  display: flex;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: #000;
+  margin: 10px 0;
+}
+
+.email-form input[type='email'] {
+  background: #000;
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  border: none;
+  width: 100%;
+  outline: 0 !important;
+}
+
+.email-form input[type='email']::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.email-submit-button {
+  width: 20px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

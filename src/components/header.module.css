@@ -1,0 +1,68 @@
+.logoIntroContainer {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: #000;
+  animation: fadeAway 1s 1.5s forwards;
+}
+
+.introLogo {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  animation: slideUp 700ms 500ms forwards;
+}
+
+.logoContainer {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ background: #000;
+}
+
+.logo {
+  width: 100vw;
+}
+
+.subLogo {
+ color: #fff;
+ text-transform: uppercase;
+ font-family: "NaNTragedy", serif;
+ font-weight: 600;
+ font-size: calc(12px + 1vw);
+ text-align: center;
+ padding-bottom: 120px;
+ padding-left: 20px;
+ padding-right: 20px;
+}
+
+@keyframes slideUp {
+  0% {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  100% {
+    top: 0;
+    transform: none;
+  }
+}
+
+@keyframes fadeAway {
+  0% {
+    z-index: 5;
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    z-index: -1;
+    opacity: 0;
+  }
+}
