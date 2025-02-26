@@ -89,8 +89,12 @@ const Footer = () => {
           Facebook
         </a>
         <a href="mailto:criticalminded@alliedmedia.org">Contact</a>
-        <a href="https://google.com" target="_blank" rel="noreferrer">
-          Support
+        <a
+          href="https://alliedmedia.org/post/donate-to-critical-minded"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Donate
         </a>
         <a
           href="https://alliedmedia.org/projects/critical-minded"
@@ -195,8 +199,12 @@ const Footer = () => {
           <div className={styles.mobileRight}>
             <div className={styles.mobileSupport}>
               <a href="mailto:criticalminded@alliedmedia.org">Contact</a>
-              <a href="https://google.com" target="_blank" rel="noreferrer">
-                Support
+              <a
+                href="https://alliedmedia.org/post/donate-to-critical-minded"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Donate
               </a>
             </div>
             <a
