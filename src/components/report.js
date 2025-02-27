@@ -126,7 +126,7 @@ const Report = ({ report }) => {
   return (
     <div>
       <div className={styles.sliderContainer}>
-        <Slider {...settings}>
+        <Slider {...settings} className={styles.slickSlider}>
           {report.previewPageImages?.map(image => {
             const imgWidth = (image.width * 60) / image.height
             return (
@@ -146,6 +146,26 @@ const Report = ({ report }) => {
             )
           })}
         </Slider>
+        <div className={styles.mobileSlider}>
+          {report.previewPageImages?.map(image => {
+            const imgWidth = (image.width * 60) / image.height
+            return (
+              <div
+                key={image.id}
+                style={{ width: `calc(${imgWidth}vh + 20px)` }}
+                className={styles.slide}
+              >
+                <div className={styles.slideContainer}>
+                  <GatsbyImage
+                    image={image.gatsbyImageData}
+                    alt={image.description}
+                    style={{ height: "60vh", width: `${imgWidth}vh` }}
+                  ></GatsbyImage>
+                </div>
+              </div>
+            )
+          })}
+        </div>
       </div>
       <div className={styles.reportInfo}>
         <div className={styles.infoLeft}>

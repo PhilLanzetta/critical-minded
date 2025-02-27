@@ -23,12 +23,28 @@
   z-index: 3;
 }
 
-.nextArrow {
+.nextArrowMobile,
+.previousArrowMobile {
+  position: absolute;
+  top: calc(100% - 20px);
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.nextArrow,
+.nextArrowMobile {
   right: 20px;
 }
 
 .previousArrow {
   left: 0px;
+}
+
+.previousArrowMobile {
+  left: 20px;
 }
 
 .carouselSVG {
@@ -91,6 +107,36 @@
 
 .resourceLink svg {
   height: 1rem;
+}
+
+.infoRight p {
+  margin-bottom: 20px;
+}
+
+.mobileSlider {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .slickSlider {
+    display: none;
+  }
+
+  .mobileSlider {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .mobileSlider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sliderContainer {
+    padding-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 700px) {
