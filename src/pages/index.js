@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { graphql } from "gatsby"
+import { graphql, navigate } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
@@ -8,6 +8,10 @@ import Report from "../components/report"
 
 const IndexPage = ({ data }) => {
   const { aboutText, additionalResources, reports } = data.contentfulIndexPage
+
+  useEffect(() => {
+    navigate("/reports/")
+  }, [])
 
   useEffect(() => {
     const body = document.body
