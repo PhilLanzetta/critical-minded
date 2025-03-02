@@ -15,9 +15,9 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Critical Minded`,
-    description: `Our purpose is to build the resources and visibility of cultural critics of color through: direct support to publications and individuals, research, advocacy, and convening. Founded by the Nathan Cummings Foundation and Ford Foundation, Critical Minded launched with a national convening of critics in 2017. It emerged from the belief that engaging critically with the ideas and images that surround us is a prerequisite for transforming our cultural landscape and preserving democracy.`,
+    description: `Critical Minded is a grantmaking and learning initiative whose work is focused on resourcing and raising the visibility of critics and writers through direct support to publications and individuals, research, and convening. Launched from a national convening of critics in 2017, Critical Minded emerged from the belief that engaging critically with the ideas and images that surround us is a prerequisite for transforming our cultural landscape and preserving democracy.`,
     author: `@criticalminded_community`,
-    siteUrl: `https://criticalminded.com/`,
+    siteUrl: `https://criticalminded.org/`,
   },
   plugins: [
     `gatsby-plugin-image`,

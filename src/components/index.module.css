@@ -23,3 +23,9 @@
   margin: 0 20px;
   background: #fff;
 }
+
+.placeholder {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+}

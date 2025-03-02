@@ -25,21 +25,7 @@ const IndexPage = ({ data }) => {
   }, [])
 
   return (
-    <Layout>
-      <p className={styles.sectionTitle}>Reports</p>
-      {reports.map(report => (
-        <Report key={report.id} report={report}></Report>
-      ))}
-      <div
-        className={styles.aboutSection}
-        dangerouslySetInnerHTML={{ __html: aboutText.childMarkdownRemark.html }}
-      ></div>
-      <p className={styles.sectionTitle}>Additional Resources</p>
-      <div className={styles.line}></div>
-      <AdditionalResourceTable
-        resources={additionalResources}
-      ></AdditionalResourceTable>
-    </Layout>
+    <div className={styles.placeholder}></div>
   )
 }
 
@@ -90,6 +76,6 @@ export const query = graphql`
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="Reports" />
 
 export default IndexPage
